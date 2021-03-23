@@ -11,7 +11,6 @@ aid = 895379494
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, 'Привет долбаеб, ' + str(message.from_user.first_name) + '!' + '\n' + '\n\n' + 'Напиши /help, чтобы посмотреть что я могу.')
-    bot.send_message(aid, 'new.user.title: ' + str(message.from_user.first_name) + " " + str(message.from_user.last_name) + ' (' + str(message.from_user.id) + ')')
  
 @bot.message_handler(commands=['help'])
 def help(message):
