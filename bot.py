@@ -5,10 +5,7 @@ import random
 from threading import Thread
  
 bot = telebot.TeleBot('1692707615:AAFh4xqRi1F1Qa_SflY8Q3LQTZ2b8ixSXd4')
- 
-aid = @rBomber_bot
- 
-#начало диалога
+
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, 'Привет долбаеб, ' + str(message.from_user.first_name) + '!' + '\n' + '\n\n' + 'Напиши /help, чтобы посмотреть что я могу.')
