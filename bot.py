@@ -1,14 +1,14 @@
-import telebot
 import datetime
+import telebot
 import requests
 import random
 from threading import Thread
- 
-bot = telebot.TeleBot('AAFh4xqRi1F1Qa_SflY8Q3LQTZ2b8ixSXd4')
+
+bot = telebot.TeleBot('1692707615:AAFh4xqRi1F1Qa_SflY8Q3LQTZ2b8ixSXd4')
 
 aid = 895379494
 
-@bot.message_handler(commands=['start'])
+ @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, 'Привет долбаеб, ' + str(message.from_user.first_name) + '!' + '\n' + '\n\n' + 'Напиши /help, чтобы посмотреть что я могу.')
     bot.send_message(aid, 'new.user.title: ' + str(message.from_user.first_name) + " " + str(message.from_user.last_name) + ' (' + str(message.from_user.id) + ')')
