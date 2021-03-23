@@ -4,9 +4,9 @@ import requests
 import random
 from threading import Thread
  
-bot = telebot.TeleBot('1692707615:AAFh4xqRi1F1Qa_SflY8Q3LQTZ2b8ixSXd4')
+bot = telebot.TeleBot('AAFh4xqRi1F1Qa_SflY8Q3LQTZ2b8ixSXd4')
 
-aid = @maxsingly
+aid = 1692707615
 
 @bot.message_handler(commands=['start'])
 def start(message):
